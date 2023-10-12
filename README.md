@@ -1,2 +1,2 @@
 # misis_po_sokolov
-My project for misis
+My project with Python for misis
