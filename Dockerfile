@@ -1,7 +1,8 @@
 FROM python:3.10
 
-RUN pip install fastapi[uvicorn]
-RUN pip install uvicorn
+COPY requirements.txt requirements.txt
+
+RUN pip install -r requirements.txt
 
 COPY ./ ./
 
