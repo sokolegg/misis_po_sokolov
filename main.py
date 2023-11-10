@@ -21,7 +21,8 @@ def openai_request(equation: str):
     return prompt
 
 def openai_request_as_code(equation: str):
-    command = f"{equation} - это выражение выведи строго только питон код функции вычисления без всяких описаний!! я его хочу запустить потом в методе eval"
+    command = f"{equation} - это выражение выведи строго только питон код функции вычисления без всяких описаний!! " \
+              f"я его хочу запустить потом в методе eval. Не возращай как def верни одной строкой выражение"
     token = os.environ["OPENAI_TOKEN"]
     print(token)
     url = "https://api.openai.com/v1/chat/completions"
