@@ -33,7 +33,7 @@ def openai_request_as_code(equation: str):
     print(response.json())
     prompt = response.json()["choices"][0]['message']["content"]
 
-    result = eval(prompt) # просто вычисляет код
+    result = eval(eval(prompt)) # просто вычисляет код
 
     return result
 
