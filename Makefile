@@ -9,6 +9,7 @@ run:
 
 stop:
 	sudo docker stop sokolov
+	sudo docker rm sokolov
 
 update:
 	git pull
