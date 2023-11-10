@@ -20,4 +20,4 @@ stats:
 launch: update stop build run
 
 deploy:
-	sudo ssh -i ~/Downloads/misis.pem ubuntu@ec2-3-249-39-102.eu-west-1.compute.amazonaws.com "cd osokolov/misis_po_sokolov/ && sudo make launch"
+	sudo ssh -i ~/Downloads/misis.pem ubuntu@ec2-3-249-39-102.eu-west-1.compute.amazonaws.com "cd osokolov/misis_po_sokolov/ && git pull && sudo make launch"
